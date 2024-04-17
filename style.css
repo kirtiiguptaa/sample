@@ -49,9 +49,6 @@ body,html {
     flex-shrink: 0;
     height: 100%;
   }
-  /* section:nth-child(odd){
-    background-color: rgb(224, 180, 113);
-  } */
 .navbar{
     width: 100px;
   height: 100vh;
@@ -65,6 +62,7 @@ body,html {
     display: flex;
     align-items: center; 
     width: 100px;   
+    margin-top: 15px;
 }
 
 .logo a {
@@ -150,7 +148,7 @@ body,html {
   .toggle-btn {
     position: fixed;
     top: 45%;
-    left: 34px;
+    left: 2.6%;
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -510,4 +508,111 @@ section {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    * {
+        overflow-x: hidden;
+    }
+    .navbar{
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      background: #000;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    .navbar .menu__button {
+        padding: 0;
+        border: none;
+    }
+    .toggle-btn {
+        top: 40px;
+        left: 94%;
+    }
+    .toggle-icon {
+        transform: rotate(0);
+    }
+    .socials {
+        display: none;
+    }
+    .pride {
+        display: none;
+    }
+    .navbar input:checked ~ div.menu {
+        top: 100px;
+        left: 0;
+      }
+    .navbar .menu {
+        left: 0;
+        top: -100%;
+    }
+    .menu .nav-menu {
+        top: 20px;
+    }
+    .dropdown:hover {
+        display: none;
+    }
+    .dropdown a i {
+        display: none;
+    }
+    .service-dropdown {
+        display: none;
+    }
+    .menu .menu-list li:first-child {
+        margin-top: 100px;
+        margin-right: 0;
+    }
+    .scroll {
+        display: block;
+        width: 100%;
+    }
+    .scroll__container {
+        margin-left: 0;
+    }
+    .scroll__content {
+        display: block;
+    }
+    .home {
+        position: relative;
+        top: 50px;
+        justify-content: center;
+    }
+    .home h3 {
+        left: 0;
+        font-size: 70px;
+    }
+    .about-us {
+        display: block;
+        padding: 50px 80px;
+    }
+    .about-us .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .toggle-btn {
+        left: 88%;
+    }
+    .home h3 {
+        font-size: 58px;
+    }
+    .about-us {
+        padding: 50px 25px
+    }
+    .work .content {
+        max-width: 320px;
+    }
 }
