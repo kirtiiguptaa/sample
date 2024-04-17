@@ -553,8 +553,11 @@ section {
     .navbar .menu {
         left: 0;
         top: -100%;
+        display: flex;
+        justify-content: center;
     }
     .menu .nav-menu {
+        position: fixed;
         top: 20px;
     }
     .dropdown:hover {
