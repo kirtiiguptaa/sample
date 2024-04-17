@@ -556,10 +556,6 @@ section {
         display: flex;
         justify-content: center;
     }
-    .menu .nav-menu {
-        position: fixed;
-        top: 20px;
-    }
     .dropdown:hover {
         display: none;
     }
@@ -570,7 +566,7 @@ section {
         display: none;
     }
     .menu .menu-list li:first-child {
-        margin-top: 100px;
+        margin-top: 50px;
         margin-right: 0;
     }
     .scroll {
